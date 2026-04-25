@@ -1,6 +1,6 @@
 # dfo-pvf-skill
 
-一个用于分析 DNF（Dungeon & Fighter，地下城与勇士）游戏 PVF 数据文件的 Claude Code Skill。
+一个用于分析 DNF（Dungeon & Fighter，地下城与勇士）游戏 PVF 数据文件的 Agent Skill。
 
 ## 欢迎开源贡献
 
