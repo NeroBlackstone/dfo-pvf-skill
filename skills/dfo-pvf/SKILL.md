@@ -31,6 +31,7 @@ common/          # 公共资源
 ## 详细参考
 
 - [ANI格式参考](references/ani_format.md) - 动画帧结构、贴图路径
+- [ALS格式参考](references/als_format.md) - 动画列表组合、多层叠加
 - [SKL格式参考](references/skl_format.md) - 技能文件字段
 - [MOB格式参考](references/mob_format.md) - 怪物定义字段
 
