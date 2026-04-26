@@ -96,3 +96,21 @@
 ```
 
 该示例展示了在同一时刻（0）叠加多个动画到不同槽位（10000/10001/10002），以及用 `[create draw only object]` 渲染 dust 特效。
+
+---
+
+## .als 文件的引用方式
+
+**`.als` 不是独立文件，而是 `.ani` 的伴随文件，以 `.ani.als` 双扩展名形式存在。**
+
+- 文件命名规则：`xxx.ani` 的伴随列表文件命名为 `xxx.ani.als`
+- 引擎自动加载：游戏引擎在加载 `xxx.ani` 时，会**自动寻找并加载**同目录下的 `xxx.ani.als`
+- 无需手动引用：`.skl` 技能文件和 `.cre` 生物文件只引用 `.ani`，引擎自动完成配对
+
+示例：
+```
+blockbusterdouble.ani         # 主动画文件
+blockbusterdouble.ani.als     # 自动被引擎加载的伴随列表文件
+```
+
+因此在 `character/[job]/animation/` 目录下，`.ani.als` 文件与 `.ani` 文件**一一对应**，每个动画都可以有一个可选的 `.als` 文件来组合多层动画效果。
